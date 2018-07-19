@@ -1,0 +1,344 @@
+Last login: Wed Jul 18 10:37:29 on ttys002
+Nicholass-MacBook-Pro:~ thelampshade$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 12492  100 12492    0     0  69554      0 --:--:-- --:--:-- --:--:-- 69400
+=> nvm is already installed in /Users/thelampshade/.nvm, trying to update using git
+=> => Compressing and cleaning up git repository
+
+=> nvm source string already in /Users/thelampshade/.bashrc
+=> bash_completion source string already in /Users/thelampshade/.bashrc
+=> Close and reopen your terminal to start using nvm or run the following to use it now:
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+Nicholass-MacBook-Pro:~ thelampshade$ source ~/.bashrc
+Nicholass-MacBook-Pro:~ thelampshade$ nvm install 8.9.0
+v8.9.0 is already installed.
+Now using node v8.9.0 (npm v5.5.1)
+Nicholass-MacBook-Pro:~ thelampshade$ which node
+/Users/thelampshade/.nvm/versions/node/v8.9.0/bin/node
+Nicholass-MacBook-Pro:~ thelampshade$ apm install linter linter-eslint react
+Installing linter to /Users/thelampshade/.atom/packages ✓
+Installing linter-eslint to /Users/thelampshade/.atom/packages ✓
+Installing react to /Users/thelampshade/.atom/packages ✓
+Nicholass-MacBook-Pro:~ thelampshade$ node
+> quit
+ReferenceError: quit is not defined
+    at repl:1:1
+    at ContextifyScript.Script.runInThisContext (vm.js:50:33)
+    at REPLServer.defaultEval (repl.js:240:29)
+    at bound (domain.js:301:14)
+    at REPLServer.runBound [as eval] (domain.js:314:12)
+    at REPLServer.onLine (repl.js:441:10)
+    at emitOne (events.js:121:20)
+    at REPLServer.emit (events.js:211:7)
+    at REPLServer.Interface._onLine (readline.js:282:10)
+    at REPLServer.Interface._line (readline.js:631:8)
+> exit
+ReferenceError: exit is not defined
+    at repl:1:1
+    at ContextifyScript.Script.runInThisContext (vm.js:50:33)
+    at REPLServer.defaultEval (repl.js:240:29)
+    at bound (domain.js:301:14)
+    at REPLServer.runBound [as eval] (domain.js:314:12)
+    at REPLServer.onLine (repl.js:441:10)
+    at emitOne (events.js:121:20)
+    at REPLServer.emit (events.js:211:7)
+    at REPLServer.Interface._onLine (readline.js:282:10)
+    at REPLServer.Interface._line (readline.js:631:8)
+> close
+ReferenceError: close is not defined
+    at repl:1:1
+    at ContextifyScript.Script.runInThisContext (vm.js:50:33)
+    at REPLServer.defaultEval (repl.js:240:29)
+    at bound (domain.js:301:14)
+    at REPLServer.runBound [as eval] (domain.js:314:12)
+    at REPLServer.onLine (repl.js:441:10)
+    at emitOne (events.js:121:20)
+    at REPLServer.emit (events.js:211:7)
+    at REPLServer.Interface._onLine (readline.js:282:10)
+    at REPLServer.Interface._line (readline.js:631:8)
+> function NBAPlayer(name, team, pos) {
+... this.name = name;
+... this.team = team;
+... this.pos = pos;
+... }
+undefined
+> let steph = new NBAPlayer("steph curry", "warriors", "1");
+undefined
+> curry;
+ReferenceError: curry is not defined
+    at repl:1:1
+    at ContextifyScript.Script.runInThisContext (vm.js:50:33)
+    at REPLServer.defaultEval (repl.js:240:29)
+    at bound (domain.js:301:14)
+    at REPLServer.runBound [as eval] (domain.js:314:12)
+    at REPLServer.onLine (repl.js:441:10)
+    at emitOne (events.js:121:20)
+    at REPLServer.emit (events.js:211:7)
+    at REPLServer.Interface._onLine (readline.js:282:10)
+    at REPLServer.Interface._line (readline.js:631:8)
+> steph;
+NBAPlayer { name: 'steph curry', team: 'warriors', pos: '1' }
+> NBAPlayer;
+[Function: NBAPlayer]
+> NBAPlayer.prototype
+NBAPlayer {}
+> close
+ReferenceError: close is not defined
+    at repl:1:1
+    at ContextifyScript.Script.runInThisContext (vm.js:50:33)
+    at REPLServer.defaultEval (repl.js:240:29)
+    at bound (domain.js:301:14)
+    at REPLServer.runBound [as eval] (domain.js:314:12)
+    at REPLServer.onLine (repl.js:441:10)
+    at emitOne (events.js:121:20)
+    at REPLServer.emit (events.js:211:7)
+    at REPLServer.Interface._onLine (readline.js:282:10)
+    at REPLServer.Interface._line (readline.js:631:8)
+> quit
+ReferenceError: quit is not defined
+    at repl:1:1
+    at ContextifyScript.Script.runInThisContext (vm.js:50:33)
+    at REPLServer.defaultEval (repl.js:240:29)
+    at bound (domain.js:301:14)
+    at REPLServer.runBound [as eval] (domain.js:314:12)
+    at REPLServer.onLine (repl.js:441:10)
+    at emitOne (events.js:121:20)
+    at REPLServer.emit (events.js:211:7)
+    at REPLServer.Interface._onLine (readline.js:282:10)
+    at REPLServer.Interface._line (readline.js:631:8)
+> .exit
+Nicholass-MacBook-Pro:~ thelampshade$ node
+> var myVar = 5
+undefined
+> myVar = 5
+5
+> myVar + 2
+7
+> const animals = {}
+undefined
+> animals.cetacea = 'whale';
+'whale'
+> animals.rodents = 'ratty rat rat'
+'ratty rat rat'
+> animals
+{ cetacea: 'whale', rodents: 'ratty rat rat' }
+> function mysteryScoping1() {
+...   var x = 'out of block';
+...   if (true) {
+.....     var x = 'in block';  
+.....     console.log(x);
+.....   }
+...   console.log(x);
+... }
+undefined
+> function mysteryScoping2() {
+...   const x = 'out of block';
+...   if (true) {
+.....     const x = 'in block';  
+.....     console.log(x);
+.....   }
+...   console.log(x);
+... }
+undefined
+> mysteryscoping1()
+ReferenceError: mysteryscoping1 is not defined
+    at repl:1:1
+    at ContextifyScript.Script.runInThisContext (vm.js:50:33)
+    at REPLServer.defaultEval (repl.js:240:29)
+    at bound (domain.js:301:14)
+    at REPLServer.runBound [as eval] (domain.js:314:12)
+    at REPLServer.onLine (repl.js:441:10)
+    at emitOne (events.js:121:20)
+    at REPLServer.emit (events.js:211:7)
+    at REPLServer.Interface._onLine (readline.js:282:10)
+    at REPLServer.Interface._line (readline.js:631:8)
+> mysteryScoping1()
+in block
+in block
+undefined
+> mysteryScoping2()
+in block
+out of block
+undefined
+> function mysteryScoping3() {
+...   const x = 'out of block';
+...   if (true) {
+.....     var x = 'in block';  
+.....     console.log(x);
+.....   }
+...   console.log(x);
+... }
+undefined
+> mysteryScoping3()
+SyntaxError: Identifier 'x' has already been declared
+
+> function mysteryScoping4() {
+...   let x = 'out of block';
+...   if (true) {
+.....     let x = 'in block';  
+.....     console.log(x);
+.....   }
+...   console.log(x);
+... }
+undefined
+> myseteryScoping4()
+ReferenceError: myseteryScoping4 is not defined
+    at repl:1:1
+    at ContextifyScript.Script.runInThisContext (vm.js:50:33)
+    at REPLServer.defaultEval (repl.js:240:29)
+    at bound (domain.js:301:14)
+    at REPLServer.runBound [as eval] (domain.js:314:12)
+    at REPLServer.onLine (repl.js:441:10)
+    at emitOne (events.js:121:20)
+    at REPLServer.emit (events.js:211:7)
+    at REPLServer.Interface._onLine (readline.js:282:10)
+    at REPLServer.Interface._line (readline.js:631:8)
+> mysteryScoping4()
+in block
+out of block
+undefined
+> function mysteryScoping5() {
+...   let x = 'out of block';
+...   if (true) {
+.....     let x = 'in block';  
+.....     console.log(x);
+.....   }
+...   let x = 'out of block again';
+...   console.log(x);
+... }
+undefined
+> mysteryScoping5()
+SyntaxError: Identifier 'x' has already been declared
+
+> func madLib(verb, adjective, noun) {
+func madLib(verb, adjective, noun) {
+     ^^^^^^
+
+SyntaxError: Unexpected identifier
+
+> function madlib(verb, adjective, noun) {
+... console.log('We shall ${verb.toUpperCase()} the ${adj.toUpperCase()} ${noun.toUpperCase()}.')
+... }
+undefined
+> madlib('make', 'rich', 'dumplings')
+We shall ${verb.toUpperCase()} the ${adj.toUpperCase()} ${noun.toUpperCase()}.
+undefined
+> function madlib(verb, adjective, noun) {
+... console.log `We shall ${verb.toUpperCase()} the ${adj.toUpperCase()} ${noun.toUpperCase()}.`
+... }
+undefined
+> madlib('william howard taft', 'beluga', 'caviar')
+ReferenceError: adj is not defined
+    at madlib (repl:2:51)
+    at repl:1:1
+    at ContextifyScript.Script.runInThisContext (vm.js:50:33)
+    at REPLServer.defaultEval (repl.js:240:29)
+    at bound (domain.js:301:14)
+    at REPLServer.runBound [as eval] (domain.js:314:12)
+    at REPLServer.onLine (repl.js:441:10)
+    at emitOne (events.js:121:20)
+    at REPLServer.emit (events.js:211:7)
+    at REPLServer.Interface._onLine (readline.js:282:10)
+> function pooplib(n, a, v) {
+... return 'we shall ${n.toUpperCase()} the ${a.toUpperCase()} out of ${v.toUpperCase}' }
+undefined
+> pooplib("poop", "shit", "cocks")
+'we shall ${n.toUpperCase()} the ${a.toUpperCase()} out of ${v.toUpperCase}'
+> function madLib(verb, adj, noun) {
+...   return `We shall ${verb.toUpperCase()} the ${adj.toUpperCase()} ${noun.toUpperCase()}.`
+... }
+undefined
+> madlib("poop", "shit", "cocks")
+ReferenceError: adj is not defined
+    at madlib (repl:2:51)
+    at repl:1:1
+    at ContextifyScript.Script.runInThisContext (vm.js:50:33)
+    at REPLServer.defaultEval (repl.js:240:29)
+    at bound (domain.js:301:14)
+    at REPLServer.runBound [as eval] (domain.js:314:12)
+    at REPLServer.onLine (repl.js:441:10)
+    at emitOne (events.js:121:20)
+    at REPLServer.emit (events.js:211:7)
+    at REPLServer.Interface._onLine (readline.js:282:10)
+> madLib("poop", "shit", "cocks")
+'We shall POOP the SHIT COCKS.'
+> def substring(string, substring) {
+def substring(string, substring) {
+    ^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+
+> function substring(string, substring) {
+... return string.includes(substring; }
+... 
+... .exit
+Nicholass-MacBook-Pro:~ thelampshade$ node
+> function substring(string, substring) {
+... return string.includes(substring); }
+undefined
+> substring("america", "merica")
+true
+> substring("america", "rocks")
+false
+> function fizzbuzz(arr) {
+... let result = []
+... for(i = 0, i < arr.length, i++) {
+..... if arr[i] % 3 === 0 && arr[i] % 5 === 0 {
+....... next}
+..... else if arr % 3 === 0 | arr[i] % 5 === 0 {
+....... result += arr[i] }
+..... }
+... return result }
+... 
+... }
+... }
+... }
+... ;
+... ;
+... ;
+... ;
+... .exit
+Nicholass-MacBook-Pro:~ thelampshade$ node
+> function isPrime(num) {
+... for(i = 2; i < num; i ++) {
+..... return true if num % i === 0; }
+... return false;}
+... exit
+... .exit
+Nicholass-MacBook-Pro:~ thelampshade$ node
+> function isPrime(num) {
+... if n < 2 { return false ; }
+if n < 2 { return false ; }
+   ^
+
+SyntaxError: Unexpected identifier
+
+> function isPrime(num) {
+... if num < 2 { return false; }
+if num < 2 { return false; }
+   ^^^
+
+SyntaxError: Unexpected identifier
+
+> function isPrime(num) {
+... if (num < 2) {return false;}
+... for(i = 2; i < num; i++) {
+..... if (num % i === 0) {return false;} }
+... return true; }
+undefined
+> isPrime(9)
+false
+> isPrime(7)
+true
+> isPrime(83)
+true
+> isPrime(2)
+true
+> function sumOfNPrimes(n) {
+... let sum = 0
+... let primeCount = 0
+... for(i = 2; i < num; i++) {

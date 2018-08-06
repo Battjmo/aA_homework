@@ -1,0 +1,32 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a {
+    display: block;
+    justify-content: flex-start;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+img {
+  float: left;
+  margin-right: 10px;
+  width: 200px;
+}
+
+li.user a {
+  justify-content: flex-end;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
